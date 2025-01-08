@@ -885,7 +885,74 @@
             "title": "NewHero",
             "icon": "sicon-image1",
             "path": "home.NewHero",
-            "fields": []
+            "fields": [
+                {
+                    "id": "title",
+                    "type": "static",
+                    "format": "title",
+                    "label": "Title",
+                    "value": "Hero sliders",
+                    "variant": "h2",
+                    "icon": "sicon-format-text"
+                },
+                {
+                    "id": "slider",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "slider",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": "Newo Hero",
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "slider.image",
+                            "type": "string",
+                            "format": "image",
+                            "label": "Image",
+                            "description": "image for slider",
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": true
+                        },
+                        {
+                            "id": "slider.title",
+                            "type": "string",
+                            "format": "text",
+                            "label": "title",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": true,
+                            "minLength": 6,
+                            "maxLength": 30
+                        },
+                        {
+                            "id": "slider.title_of_button",
+                            "type": "string",
+                            "format": "text",
+                            "label": "title_of_button",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": "عرض الن",
+                            "multilanguage": false,
+                            "required": true,
+                            "minLength": "3",
+                            "maxLength": 30
+                        }
+                    ],
+                    "value": [],
+                    "minLength": 1,
+                    "maxLength": "6"
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
