@@ -948,20 +948,19 @@
                             "maxLength": 30
                         },
                         {
-                            "id": "slider.cotegorie_url",
-                            "type": "items",
-                            "format": "dropdown-list",
-                            "label": "cotegorie_url",
+                            "id": "slider.url",
+                            "type": "string",
+                            "format": "url",
+                            "inputType": "url",
+                            "label": "URL",
                             "description": null,
                             "labelHTML": null,
-                            "icon": "sicon-keyboard_arrow_down",
-                            "selected": [],
-                            "options": [],
-                            "source": "Categories",
-                            "multichoice": true,
-                            "searchable": true,
-                            "required": false,
-                            "value": []
+                            "placeholder": "e.g. https://salla.sa",
+                            "icon": "sicon-link",
+                            "value": null,
+                            "required": true,
+                            "minLength": 6,
+                            "maxLength": "300"
                         }
                     ],
                     "value": [],
