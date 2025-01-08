@@ -879,6 +879,13 @@
                     "source": "brands"
                 }
             ]
+        },
+        {
+            "key": "9da55686-54ea-4964-9e58-9562ae655a88",
+            "title": "NewHero",
+            "icon": "sicon-image1",
+            "path": "home.NewHero",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
