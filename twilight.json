@@ -946,6 +946,22 @@
                             "required": true,
                             "minLength": "3",
                             "maxLength": 30
+                        },
+                        {
+                            "id": "slider.cotegorie_url",
+                            "type": "items",
+                            "format": "dropdown-list",
+                            "label": "cotegorie_url",
+                            "description": null,
+                            "labelHTML": null,
+                            "icon": "sicon-keyboard_arrow_down",
+                            "selected": [],
+                            "options": [],
+                            "source": "Categories",
+                            "multichoice": true,
+                            "searchable": true,
+                            "required": false,
+                            "value": []
                         }
                     ],
                     "value": [],
