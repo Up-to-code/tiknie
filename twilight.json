@@ -906,10 +906,10 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "slider.image",
+                            "id": "slider.bg_image",
                             "type": "string",
                             "format": "image",
-                            "label": "Image",
+                            "label": "bg_image",
                             "description": "image for slider",
                             "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
@@ -931,6 +931,18 @@
                             "required": true,
                             "minLength": 6,
                             "maxLength": 30
+                        },
+                        {
+                            "id": "slider.image",
+                            "type": "string",
+                            "format": "image",
+                            "label": "Image",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": true
                         },
                         {
                             "id": "slider.title_of_button",
