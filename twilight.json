@@ -295,6 +295,15 @@
             "path": "homw.custm_catigores",
             "fields": [
                 {
+                    "id": "description",
+                    "type": "static",
+                    "format": "description",
+                    "label": "Description",
+                    "value": "<div ><h6 >معاينة العنصر</h6><img src='https://x069my5u3k.ufs.sh/f/2FLtVr6zCdoRFwvk7b0YmHLDrNXajGw04RbJSuzx1eTiA2fM'></div>",
+                    "variant": "h1",
+                    "icon": "sicon-format-size"
+                },
+                {
                     "id": "categories",
                     "type": "collection",
                     "format": "collection",
