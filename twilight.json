@@ -293,7 +293,22 @@
             "title": "custom catigores",
             "icon": "sicon-delivery-parcel2",
             "path": "homw.custm_catigores",
-            "fields": []
+            "fields": [
+                {
+                    "id": "categories",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "categories",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [],
+                    "value": [],
+                    "minLength": 1,
+                    "maxLength": 5
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
