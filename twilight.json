@@ -292,7 +292,7 @@
             "key": "485d1595-82ef-450b-be72-60294ed3b44b",
             "title": "custom catigores",
             "icon": "sicon-delivery-parcel2",
-            "path": "homw.custm_catigores",
+            "path": "home.custm_catigores",
             "fields": [
                 {
                     "id": "description",
