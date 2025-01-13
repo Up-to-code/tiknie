@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="flex flex-wrap gap-4 mt-10 mx-1">
+    {% for item in component.categories %} {% for c in item.categorie %} {% if
+    loop.index == 1 %}
+
+    <a href="{{ c.url }}" class="block">
+      <div
+        class="bg-white rounded-2xl shadow-md p-6 flex items-center space-x-6 w-96 relative"
+      >
+        <div
+          class="flex-shrink-0 p-4 bg-gray-100 rounded-full flex items-center justify-center"
+        >
+          <img
+            src="{{ item.image }}"
+            alt="سماعات"
+            class="w-28 h-28 object-contain"
+          />
+        </div>
+        <!-- Discount Badge -->
+        <div
+          class="absolute top-4 left-4 bg-primary text-white text-sm font-semibold px-4 py-1 rounded-full"
+        >
+          {{ item.offer_title }}
+        </div>
+
+        <!-- Text Content -->
+        <div class="text-right">
+          <h2 class="text-2xl font-bold text-gray-800 mb-2">
+            {{ item.title }}
+          </h2>
+          <p class="text-gray-600">
+            {{ item.desc }}
+          </p>
+        </div>
+
+        <!-- Image -->
+      </div>
+    </a>
+
+    {% endif %} {% endfor %} {% endfor %}
+  </div>
+</div>
