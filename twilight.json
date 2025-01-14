@@ -398,7 +398,22 @@
             "title": "store Features",
             "icon": "sicon-flag-wave",
             "path": "home.Features",
-            "fields": []
+            "fields": [
+                {
+                    "id": "features",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "Feature",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [],
+                    "value": [],
+                    "minLength": 1,
+                    "maxLength": "6"
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
