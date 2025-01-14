@@ -1,22 +1,17 @@
-{#
-| Variable      | Type   | Description                                                      |
-|---------------|--------|------------------------------------------------------------------|
-| items[]       | array  | List of 3 features                                               |
-| items[].icon  | string | SallaIcons css class `sicon-*`                                   |
-| items[].title | string | Title of the feature                                             |
-| items[].text  | string | Subtitle for the feature                                         |
-| position      | Int    | Sorting number start from zero                                   |
-#}
-<section class="s-block s-block--features container">
-    <div class="grid grid-cols-[repeat(2,minmax(0,1fr))] md:grid-cols-[repeat(3,minmax(0,1fr))] gap-4 sm:gap-6 xl:gap-8">
-      {% for item in components.features %}
-          <div class="s-block--features__item">
-            <div class="feature-icon">
-              <img src="{{ item.image }}" alt="{{ item.title }}">
-            </div>
-            <h2>{{ item.title }}</h2>
-            <p>{{ item.sub_title }}</p>
+<section class="container  px-4   ">
+    <div class="flex flex-wrap mx-auto gap-4 md:gap-8 my-8">
+      {% for item in component.features %}
+        <div class="bg-white rounded-lg shadow-md overflow-hidden px-2">
+          <div class="p-4">
+            <img 
+              src="{{ item.image }}" 
+              alt="{{ item.title }}"
+              class="w-10 h-10 object-cover my-2"
+            >
+            <h2 class="text-xl font-semibold mb-2">{{ item.title }}</h2>
+            <p class="text-gray-600">{{ item.sub_title }}</p>
           </div>
+        </div>
       {% endfor %}
     </div>
-</section>
+  </section>
