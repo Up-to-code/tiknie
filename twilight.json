@@ -408,7 +408,50 @@
                     "labelHTML": null,
                     "item_label": null,
                     "icon": "sicon-list-add",
-                    "fields": [],
+                    "fields": [
+                        {
+                            "id": "features.image",
+                            "type": "string",
+                            "format": "image",
+                            "label": "Image",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": true
+                        },
+                        {
+                            "id": "features.title",
+                            "type": "string",
+                            "format": "text",
+                            "label": "title",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": true,
+                            "minLength": "3",
+                            "maxLength": 30
+                        },
+                        {
+                            "id": "features.sub_title",
+                            "type": "string",
+                            "format": "text",
+                            "label": "sub_title",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        }
+                    ],
                     "value": [],
                     "minLength": 1,
                     "maxLength": "6"
