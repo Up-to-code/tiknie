@@ -392,6 +392,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "ad3ace5f-6788-4f47-921f-922fd3d9d213",
+            "title": "store Features",
+            "icon": "sicon-flag-wave",
+            "path": "home.Features",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
