@@ -475,7 +475,7 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "fqa.string",
+                            "id": "fqa.question",
                             "type": "string",
                             "format": "text",
                             "label": "question",
