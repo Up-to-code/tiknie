@@ -475,7 +475,7 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "fqa.q",
+                            "id": "fqa.question",
                             "type": "string",
                             "format": "text",
                             "label": "question",
@@ -485,7 +485,7 @@
                             "icon": "sicon-format-text-alt",
                             "value": null,
                             "multilanguage": false,
-                            "required": true,
+                            "required": false,
                             "minLength": 6,
                             "maxLength": 30
                         },
