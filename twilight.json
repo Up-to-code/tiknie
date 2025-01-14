@@ -492,17 +492,17 @@
                         {
                             "id": "fqa.answer",
                             "type": "string",
-                            "format": "richtext",
+                            "format": "text",
                             "label": "answer",
                             "description": null,
                             "labelHTML": null,
-                            "placeholder": "Your text here ..",
-                            "icon": "sicon-touch-type",
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
                             "value": null,
                             "multilanguage": false,
-                            "required": false,
-                            "minLength": "30",
-                            "maxLength": 1000
+                            "required": true,
+                            "minLength": 6,
+                            "maxLength": "500"
                         }
                     ],
                     "value": [],
