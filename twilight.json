@@ -464,6 +464,13 @@
             "icon": "sicon-store",
             "path": "home.FAQ",
             "fields": []
+        },
+        {
+            "key": "8d35cc51-b1cf-4bab-9199-52652bddc369",
+            "title": "cart",
+            "icon": "sicon-store",
+            "path": "home.Cart",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
