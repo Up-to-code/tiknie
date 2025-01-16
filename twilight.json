@@ -516,7 +516,35 @@
             "title": "ad baner",
             "icon": "sicon-image1",
             "path": "home.ad_baner",
-            "fields": []
+            "fields": [
+                {
+                    "id": "url",
+                    "type": "string",
+                    "format": "url",
+                    "inputType": "url",
+                    "label": "URL",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://salla.sa",
+                    "icon": "sicon-link",
+                    "value": null,
+                    "required": true,
+                    "minLength": 6,
+                    "maxLength": "120"
+                },
+                {
+                    "id": "image",
+                    "type": "string",
+                    "format": "image",
+                    "label": "Image",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://hostname.com/image.png",
+                    "icon": "sicon-image",
+                    "value": null,
+                    "required": true
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
