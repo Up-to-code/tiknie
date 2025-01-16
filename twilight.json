@@ -464,6 +464,13 @@
             "icon": "sicon-store",
             "path": "home.Cart",
             "fields": []
+        },
+        {
+            "key": "85df4f78-f7c0-41d6-bfd1-ec5e7316bac5",
+            "title": "FQA",
+            "icon": "sicon-feather-pen",
+            "path": "home.FQA",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
