@@ -1,42 +1,67 @@
 {# faq.twig #}
-
 <style>
+  :root {
+    --primary-color: #4F46E5;
+    --primary-light: #E0E7FF;
+    --hover-color: #4338CA;
+  }
+
   .faq-answer {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    transition: all 0.3s ease-out;
   }
-
+  
   .faq-answer.open {
     max-height: 300px;
     opacity: 1;
   }
-
+  
   .rotate-180 {
     transform: rotate(180deg);
   }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .faq-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 </style>
 
-<div class="container mx-auto px-4 py-8">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-    {# Left Column #}
-    <div class="bg-white rounded-lg shadow">
+<div class="container mx-auto px-4 py-8 theme-purple">
+  <div class="max-w-6xl mx-auto">
+    <div class="faq-grid">
       {% for faq in component.fqa %}
-        <div class="border-b border-gray-200 last:border-0">
+        <div class="bg-white rounded-lg border border-gray-200 hover:border-primary transition-colors h-fit">
           <button
-            class="w-full py-4 px-6 text-left hover:bg-gray-50 focus:outline-none flex justify-between items-center group"
+            class="w-full p-4 text-left focus:outline-none focus:ring-2 rounded-lg flex justify-between items-center group"
             onclick="toggleFAQ(this)"
             aria-expanded="false">
-            <span class="font-medium text-lg">{{ faq.title }}</span>
-            <svg class="w-5 h-5 transform transition-transform duration-300 ease-in-out group-hover:text-blue-500"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-            </svg>
+            <span class="font-medium">{{ faq.title }}</span>
+            <div class="w-6 h-6 rounded-full bg-[var(--primary-light)] flex items-center justify-center shrink-0 ml-2">
+              <svg 
+                class="w-4 h-4 text-[var(--primary-color)] transition-transform duration-200"
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24">
+                <path 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round" 
+                  stroke-width="2" 
+                  d="M12 6v12m6-6H6"/>
+              </svg>
+            </div>
           </button>
           <div class="faq-answer">
-            <div class="px-6 py-4">
-              <p class="text-gray-600">{{ faq.sub_title }}</p>
+            <div class="px-4 pb-4 text-gray-600">
+              {{ faq.sub_title }}
             </div>
           </div>
         </div>
@@ -48,19 +73,28 @@
 <script>
   function toggleFAQ(button) {
     const answer = button.nextElementSibling;
-    const arrow = button.querySelector('svg');
+    const icon = button.querySelector('svg');
     const isOpen = answer.classList.toggle('open');
-
-    // Close other open FAQs
+    
+    // Update plus/minus icon
+    if (isOpen) {
+      icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6"/>';
+    } else {
+      icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/>';
+    }
+    
+    // Close other FAQs
     document.querySelectorAll('.faq-answer').forEach(item => {
       if (item !== answer) {
+        const itemButton = item.previousElementSibling;
+        const itemIcon = itemButton.querySelector('svg');
+        
         item.classList.remove('open');
-        item.previousElementSibling.querySelector('svg').classList.remove('rotate-180');
-        item.previousElementSibling.setAttribute('aria-expanded', 'false');
+        itemButton.setAttribute('aria-expanded', 'false');
+        itemIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/>';
       }
     });
-
-    arrow.classList.toggle('rotate-180', isOpen);
+    
     button.setAttribute('aria-expanded', isOpen);
   }
 </script>
