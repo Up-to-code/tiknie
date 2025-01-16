@@ -459,13 +459,6 @@
             ]
         },
         {
-            "key": "8d35cc51-b1cf-4bab-9199-52652bddc369",
-            "title": "cart",
-            "icon": "sicon-store",
-            "path": "home.Cart",
-            "fields": []
-        },
-        {
             "key": "85df4f78-f7c0-41d6-bfd1-ec5e7316bac5",
             "title": "FQA",
             "icon": "sicon-feather-pen",
