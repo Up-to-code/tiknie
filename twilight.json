@@ -510,6 +510,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "a9f05b67-0b23-454e-8565-9786f53993e3",
+            "title": "ad baner",
+            "icon": "sicon-image1",
+            "path": "home.ad_baner",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
