@@ -459,59 +459,6 @@
             ]
         },
         {
-            "key": "70920fff-2a86-44bc-b224-5573938f9ec2",
-            "title": "FAQ",
-            "icon": "sicon-store",
-            "path": "home.FAQ",
-            "fields": [
-                {
-                    "id": "fqa",
-                    "type": "collection",
-                    "format": "collection",
-                    "label": "FQA",
-                    "description": null,
-                    "labelHTML": null,
-                    "item_label": null,
-                    "icon": "sicon-list-add",
-                    "fields": [
-                        {
-                            "id": "fqa.question",
-                            "type": "string",
-                            "format": "text",
-                            "label": "question",
-                            "description": null,
-                            "labelHTML": null,
-                            "placeholder": "Placeholder text ..",
-                            "icon": "sicon-format-text-alt",
-                            "value": null,
-                            "multilanguage": false,
-                            "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
-                        },
-                        {
-                            "id": "fqa.answer",
-                            "type": "string",
-                            "format": "text",
-                            "label": "answer",
-                            "description": null,
-                            "labelHTML": null,
-                            "placeholder": "Placeholder text ..",
-                            "icon": "sicon-format-text-alt",
-                            "value": null,
-                            "multilanguage": false,
-                            "required": true,
-                            "minLength": 6,
-                            "maxLength": "500"
-                        }
-                    ],
-                    "value": [],
-                    "minLength": 1,
-                    "maxLength": "12"
-                }
-            ]
-        },
-        {
             "key": "8d35cc51-b1cf-4bab-9199-52652bddc369",
             "title": "cart",
             "icon": "sicon-store",
