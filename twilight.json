@@ -459,10 +459,17 @@
             ]
         },
         {
-            "key": "70920fff-2a86-44bc-b224-5573938f9ec2",
-            "title": "FAQ",
+            "key": "8d35cc51-b1cf-4bab-9199-52652bddc369",
+            "title": "cart",
             "icon": "sicon-store",
-            "path": "home.FAQ",
+            "path": "home.Cart",
+            "fields": []
+        },
+        {
+            "key": "85df4f78-f7c0-41d6-bfd1-ec5e7316bac5",
+            "title": "FQA",
+            "icon": "sicon-feather-pen",
+            "path": "home.FQA",
             "fields": [
                 {
                     "id": "fqa",
@@ -475,25 +482,10 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "fqa.question",
+                            "id": "fqa.title",
                             "type": "string",
                             "format": "text",
-                            "label": "question",
-                            "description": null,
-                            "labelHTML": null,
-                            "placeholder": "Placeholder text ..",
-                            "icon": "sicon-format-text-alt",
-                            "value": null,
-                            "multilanguage": false,
-                            "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
-                        },
-                        {
-                            "id": "fqa.answer",
-                            "type": "string",
-                            "format": "text",
-                            "label": "answer",
+                            "label": "title",
                             "description": null,
                             "labelHTML": null,
                             "placeholder": "Placeholder text ..",
@@ -502,21 +494,29 @@
                             "multilanguage": false,
                             "required": true,
                             "minLength": 6,
+                            "maxLength": 30
+                        },
+                        {
+                            "id": "fqa.sub_title",
+                            "type": "string",
+                            "format": "text",
+                            "label": "sub_title",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
                             "maxLength": "500"
                         }
                     ],
                     "value": [],
                     "minLength": 1,
-                    "maxLength": "12"
+                    "maxLength": 5
                 }
             ]
-        },
-        {
-            "key": "8d35cc51-b1cf-4bab-9199-52652bddc369",
-            "title": "cart",
-            "icon": "sicon-store",
-            "path": "home.Cart",
-            "fields": []
         }
     ],
     "support_url": "https://example.com",
